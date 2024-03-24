@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    訂單編號: <%=orders.trade_no%>
+    <br />
+    消費金額: <%=orders.trade_amt%> 元
+    <form action="/linePay/<%=orders.trade_no%>" method="post">
+      <button type="submit">確認結帳</button>
+    </form>
+  </body>
+</html>
